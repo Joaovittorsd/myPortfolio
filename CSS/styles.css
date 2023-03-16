@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@100&family=Lato:wght@700&family=Roboto&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root{
+    --color--background--menu: #333B50;
+    --button--cor: #008F2F;
+    --fonte--cor--logo: #00D646;
+    --font--cor--menu--cinza: #8791a2;
+    --font--cor--menu--hover: #a3aab7;
+    --fonte--cor--branca: #ffff;
+    --fonte--cor--numeros: #BEC7D5;
+    --fonte--cor--mais: rgb (90,199,213);
+    --fonte--cor--experiencia: #BEC7D5;
+    --cor--button--enviar: #00d646;
+    --cor--button--hover: #324158;
+    --largura--imagem-container: 1864px;
+    --lagura--imagem--projetos: 327px;
+    --altura--imagem--projetos: 320px;
+    --font--object: 'Cormorant Garamond', serif;
+    --font--sub: 'Tilt Warp';
+    --font--ano: 'Lato', sans-serif;
+    --font--empresa: 'Inter', sans-serif;
+    --font--logo: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container__menu {
+    background-color: var(--color--background--menu);
+    z-index: 1;
+}
+
+.nav__menu, .nav__menu div{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__menu div {
+    align-items: center;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-right: 4px solid var(--fonte--cor--logo);
+    font-size: 25px;
+    color: var(--fonte--cor--logo);
+    font-family: var(--font--logo);
+}
+
+.header__menu {
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.lista__menu {
+    padding: .5em 1em;
+}
+
+.lista__menu a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--font--cor--menu--cinza);
+}
+
+.home a{
+    color: var(--fonte--cor--logo) ;
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.principal {
+    background-image: url(https://static.wixstatic.com/media/nsplsh_7f362ca244f6462383a295068bf73329~mv2.jpg/v1/fill/w_1864,h_1088,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/nsplsh_7f362ca244f6462383a295068bf73329~mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90em;
+}
+
+.container__caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto__perfil {
+    margin-top: -4rem;
+    width: 200px;
+    height:  200px;
+    border-radius: 100px;
+}
+
+.titulo__principal {
+    margin-top: 8em;
+}
+
+.container__perfil {
+    justify-content: center;
+}
+
+.container__titulo, .container__nome {
+    margin-left: 161px;
+    font-size: 65px;
+    color: var(--fonte--cor--branca);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.titulo_secundario {
+    margin-top: 2em;
+}
+
+.container__object {
+    margin-left: 161px;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: var(--font--object);
+    color: var(--fonte--cor--branca);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.secundario {
+    background-image: url(https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_1864,h_2687,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg);
+    background-repeat: no-repeat;
+    height: 2864px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container__portfolio {
+    text-align: center;
+    font-size: 2em;
+    top: 3em;
+    position: relative;
+}
+
+.menu__portfolio {
+    margin: 1em 0 0 0;
+    color: var(--fonte--cor--branca);
+    font-family: var(--font--sub);
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+
+.ordem_02 {
+    color: var(--fonte--cor--numeros);
+}
+
+.portfolio__links {
+    font: var(--font--object);
+    line-height: 0;
+}
+
+.portfolio__link {
+    font-size: 26px;
+    display: inline-block;
+    margin-left: -8px;
+    letter-spacing: 0.1em;
+}
+
+.portfolio__link--ultimo{
+    color: var(--fonte--cor--branca);
+}
+
+.portfolio__link--mais{
+    color: var(--fonte--cor--numeros);
+}
+
+.portfolio__projeto-img {
+    display: inline-block;
+    margin: 3em 0 4em;
+    width: var(--lagura--imagem--projetos);
+    height: var(--altura--imagem--projetos);
+}
+
+.secundario__container__experiecia {
+    width: 100%;
+}
+
+.portfolio__image__list {
+    padding: 0;
+}
+
+.container__experiencias {
+    display: inline-block;
+    width: 24em;
+}
+
+.experienci__circulo__01 {
+    margin: 3em 0 0 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--fonte--cor--logo);
+  }
+
+.experiencia__linha__1 {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 6.3px;
+    width: 2px;
+    height: 10px;
+    transition: height 0.8s ease-out;
+    background-color: var(--fonte--cor--logo);
+    font-size: 10px;
+}
+
+.esperiecia__01 {
+    margin: -1em;
+    width: 350px;
+    text-align: right;
+    color:  var(--fonte--cor--branca);
+}
+
+.experiencia__ano {
+    font-family: var(--font--ano);
+    color: var(--fonte--cor--logo);
+    font-size: 19px;
+    width: 700;
+}
+
+.experiencia__empresa {
+    font-size: 20px;
+    font-family: var(--font--empresa);
+}
+
+.experiencia__cargo {
+    margin: 0 0 .3em;
+    font-size: 20px;
+}
+
+.experiencia__descricao {
+    margin: 0;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--fonte--cor--experiencia);
+    
+}
+
+.esperiecia__02 {
+    margin: -1em;
+    width: 350px;
+    margin-left: 61%;
+    text-align: left;
+    color:  var(--fonte--cor--branca);
+}
+
+.experiencia__ano__2 {
+    font-family: var(--font--ano);
+    color: var(--fonte--cor--logo);
+    font-size: 19px;
+    width: 700;
+}
+
+.experiencia__empresa__2 {
+    font-size: 20px;
+    font-family: var(--font--empresa);
+}
+
+.experiencia__cargo__2 {
+    margin: 0 0 .3em;
+    font-size: 20px;
+}
+
+.sobre__download {
+    text-align: center;
+    position: relative;
+    margin-top: -34em;
+    z-index: 1;
+}
+
+.sobre {
+    margin: 0;
+    width: 56em;
+    height: 42em;
+    background-color: #333B50;
+    box-shadow: 0px 0px 30px -5px;
+    display: inline-block;
+}
+
+.container__logo {
+    margin: 4em 24em 0;
+    width: 8em;
+    display: flex;
+}
+
+.circulo__sobre{
+    position: relative;
+    width: 7em;
+    height: 2.3em;
+    border-radius: 50%;
+    border-right: 5px solid var(--fonte--cor--logo);
+    font-size: 50px;
+    color: var(--fonte--cor--logo);
+}
+
+.logo__sobre {
+    position: absolute;
+    top: .2em;
+    right: .6em;
+    font-family: var(--font--logo);
+    font-size: 65px;
+}
+
+.sobre__descricao {
+    margin: 3em 5em ;
+    text-align: justify;
+    font-size: 20px;
+    color: var(--fonte--cor--experiencia);
+    font-family: var(--font--object);
+}
+
+.container__download {
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+    width: 12em;
+    border: 1px solid var(--fonte--cor--logo);
+    
+}
+
+.container__download a {
+    color: var(--fonte--cor--branca);
+    text-decoration: none;
+}
+
+.contato {
+    position: relative;
+    text-align: center;
+    margin-top: -4em;
+    width: 100%;
+    z-index: 1;
+}
+
+.container__contato {
+    width: 100%;
+    max-width: 60em;
+    height: 43em;
+    display: inline-block;
+}
+
+.form__contato {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    box-shadow: 0px 0px 30px -5px;
+    background-color: var(--color--background--menu);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text__right {
+    grid-column: 1 / 2;
+}
+
+.text__left {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+#mensagem {
+    width: 31.2em;
+    height: 16em;
+}
+
+
+.terceiro {
+    margin-top: -20em;
+    position: relative;
+    height: 91em;
+    z-index: 0;
+}
+
+.container__image {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://static.wixstatic.com/media/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg/v1/fill/w_1695,h_1250,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.quarto {
+    position: relative;
+    margin-top: -39em;
+    height: 35em;
+    z-index: 0;
+}
+
+.container__image__contato {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://static.wixstatic.com/media/035244_9fd1a405d2864f3b8415885edfcd79dd~mv2.jpg/v1/fill/w_1695,h_553,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/035244_9fd1a405d2864f3b8415885edfcd79dd~mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* para fixar a imagem na tela */
+    background-size: cover;
+  }
+
+.rodape {
+    width: 100%;
+    height: 12em;
+    background-color: #333B50;
+}
+
+.rodape {
+    text-align: center;
+  }
+  
+  .buton {
+    display: flex;
+    margin-top: 6em;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    line-height: 50px; 
+    text-align: center; 
+  }
+  
+  .logo__rodape {
+    color: var(--fonte--cor--logo);
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .copy {
+    display: flex;
+    align-items: center;
+    color: var(--fonte--cor--experiencia);
+  }
+
+.titulo__contato {
+  font-family: var(--font--logo);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+  margin: 5em 0 0 5em;
+  color: var(--fonte--cor--branca);
+}
+
+.descricao__contato, .contato__email {
+  font-family: var(--font--logo);
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--fonte--cor--branca);
+  text-align: Left;
+  margin: 2em 5em 0 5em ;
+  line-height: 2em;
+}
+
+.container__envio__contatos {
+    display: flex;
+    width: 100%;
+    margin-top: 7em;
+    flex-wrap: wrap;
+}
+
+.container__inputs {
+    padding: .2em;
+}
+ 
+.contato__inputs {
+    width: 15em;
+    height: 2.5em;
+}
+
+#telefone {
+    width: 31em;
+}
+
+
+.container__textare {
+    width: 26.5em;
+    box-sizing: border-box;
+    padding: .5em 0 0 .2em;
+    resize: none;
+    max-height: 17em;
+    text-align: left;
+}
+
+#textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.container__button {
+    width: 26.5em;
+    box-sizing: border-box;
+    padding: .7em 0 0 .2em;
+    max-height: 17em;
+}
+
+#BtnEnviar {
+    width: 100%;
+    height: 3em;
+    background-color: var(--cor--button--enviar);
+    color: var(--fonte--cor--branca);
+    border: none;
+}
+
+.container__social {
+    text-align: right;
+}
+
+.links__social {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+.container__social__item {
+    text-align: left;
+}
+
+.listas__items__social {
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.progress-container {
+    width: 40em;
+    position: relative;
+    display: inline-block;
+    margin-top: 28em;
+}
+
+h3.portfolio__tecnologia {
+    font-size: 26px;
+    font-family: var(--font--object);
+    color: var(--fonte--cor--branca);
+    font-weight: 400;
+}
+
+.container__profissional {
+    font-size: 2em;
+}
+
+.containr__nameTcnologia {
+    position: relative;
+    margin-top: 4em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container__tecnologias {
+    display: inline-block;
+    width: 60em;
+    height: 50em;
+}
+
+.tecnologias {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.itens__tecnologia {
+    margin-top: 2em;
+    list-style: none;
+    text-align: left;
+    line-height: 2.5em;
+    font-family: var(--font--object);
+    font-weight: 500;
+    color: var(--fonte--cor--experiencia);
+}
+
+.tecnologia__linha {
+    margin: 1.6em 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .tecnologia__linha__1 {
+    display: block;
+    width: 100%;
+    height: .7em;
+    background-color: #ddd;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    margin-bottom: 2.8em;
+  }
+  
+  .tecnologia__linha__1.preenchido {
+    background-color: #00D646;
+    color: #fff;
+  }
+  
+
+@keyframes progress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.links__porcentagens {
+    margin-top: 2em;
+    list-style: none;
+    text-align: left;
+    line-height: 2.5em;
+    font-family: var(--font--object);
+    font-weight: 500;
+    color: var(--fonte--cor--branca);
+}
+
+
+
+/*-----Efeios Hover Mneu-------*/
+.home a:hover {
+    color: var(--font--cor--menu--hover);
+    transition: 0.5s;
+}
+
+#BtnEnviar:hover {
+    background-color: var(--cor--button--hover);
+    transition: .4s;
+}
+
+.lista__menu a:hover {
+    color: var(--font--cor--menu--hover);
+    transition: 0.4s;
+}
+
+.secundario::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 167em;
+    background-color: rgba(9, 19, 48, 0.55);
+}
+
+.terceiro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 172em;
+    background-color: rgba(9, 19, 48, 0.4);
+    z-index: 0;
+}
+
+.quarto::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 172em;
+    background-color: rgba(9, 19, 48, 0.4);
+    z-index: 0;
+}
+
+.container__download:hover {
+    cursor: pointer;
+    border: 1px solid #ffff;
+    background-color: var(--button--cor);  
+    transition: background-color .5s ease;
+}
+
+.contato__inputs:hover {
+    border-color: var(--cor--button--enviar);
+}
+
+textarea:hover {
+    border-color: var(--cor--button--enviar);
+}
+
+
+
+/*-----------Responsividade de telas------------------*/
+
+@media (max-width: 870px){
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 56em;
+    }
+
+    .container__caixa {
+        display: flex;
+        align-items: center;
+        margin-left: 6em;
+    }
+
+    .secundario::before {
+        content: '';
+        position: absolute;
+        width: 56em;
+        height: 167em;
+        background-color: rgba(9, 19, 48, 0.55);
+        z-index: 0;
+    }
+
+    .portfolio__projeto-img {
+        display: inline-block;
+        margin: 3em 0 4em;
+        width: 10em;
+        height: 10em;
+    }
+
+    .container__experiencias {
+        display: inline-block;
+        width: 22em;
+    }
+
+    .esperiecia__02 {
+        margin: -1em;
+        width: 10.5em;
+        margin-left: 12.5em;
+        text-align: left;
+        color: var(--fonte--cor--branca);
+    }
+
+    .container__logo {
+        margin: 4em 20em 0;
+        width: 8em;
+        display: flex;
+    }
+
+    .sobre {
+        margin: 0;
+        width: 50em;
+        height: 42em;
+        background-color: #333B50;
+        box-shadow: 0px 0px 30px -5px;
+        display: inline-block;
+    }
+
+    .container__tecnologias {
+        display: inline-block;
+        width: 55em;
+        height: 50em;
+    }
+
+    .container__contato {
+        width: 100%;
+        max-width: 51em;
+        height: 43em;
+        display: inline-block;
+    }
+
+    .contato__inputs {
+        width: 25em;
+        height: 2.5em;
+    }
+
+    #telefone {
+        width: 25em;
+    }
+
+    #mensagem{
+        width: 25.2em;
+    }
+
+    .container__button {
+        width: 21.6em;
+        box-sizing: border-box;
+        padding: 0.7em 0 0 0.2em;
+        max-height: 17em;
+    }
+
+}
+
