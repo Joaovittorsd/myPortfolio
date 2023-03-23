@@ -69,3 +69,15 @@ menuLinks.forEach(function(link) {
     section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" }); // rolar para a seção de destino
   });
 });
+
+
+function clickMenu() {
+  const lista__menu = document.querySelector('.header__menu');
+  lista__menu.style.display = 'flex';
+  lista__menu.style.flexDirection = 'column';
+
+  const foto__perfil = document.querySelector('.container__caixa');
+  foto__perfil.style.marginTop = '5em';
+
+  
+}

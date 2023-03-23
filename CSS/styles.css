@@ -37,6 +37,16 @@ body {
     top: 0;
 }
 
+nav #burguer {
+    color: white;
+    cursor: pointer;
+}
+
+nav #burguer:hover {
+    color: var(--cor--button--enviar);
+    cursor: pointer;
+}
+
 .nav__menu,
 .nav__menu div {
     display: flex;
@@ -66,6 +76,8 @@ body {
 .lista__menu {
     padding: .5em 1em;
 }
+
+
 
 .lista__menu a {
     text-decoration: none;
@@ -722,6 +734,14 @@ textarea:hover {
         display: flex;
         align-items: center;
         margin-left: 6em;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    nav #burguer {
+        margin-left: 100vw;
     }
 
     .secundario::before {
