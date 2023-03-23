@@ -58,22 +58,14 @@ window.addEventListener('load', function() {
     window.addEventListener('scroll', carregarLinha);
 });
 
-function downloadPDF() {
-  const fileUrl = 'https://drive.google.com/file/d/1GWr04Ndme0Gv3G__fo2ANn5MEZvMWVLV/view?usp=sharing';
-  const fileName = 'meu_arquivo.pdf';
-  fetch(fileUrl, {
-    mode: 'no-cors'
-  })
-    .then(resp => resp.blob())
-    .then(blob => {
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.style.display = 'none';
-      a.href = url;
-      a.download = fileName;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-    })
-    .catch(() => alert('Erro ao fazer download do arquivo.'));
-}
+
+const menuLinks = document.querySelectorAll(".smooth-scroll");
+
+// adicionar ouvinte de eventos para cada tag do menu
+menuLinks.forEach(function(link) {
+  link.addEventListener("click", function(event) {
+    event.preventDefault(); // evitar que a tag 'a' recarregue a página
+    const section = document.querySelector(this.hash);
+    section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" }); // rolar para a seção de destino
+  });
+});

@@ -31,7 +31,10 @@ body {
 
 .container__menu {
     background-color: var(--color--background--menu);
-    z-index: 1;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .nav__menu,
