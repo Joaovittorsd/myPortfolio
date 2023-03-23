@@ -80,8 +80,11 @@ function clickMenu() {
   }
   lista__menu.style.flexDirection = 'column';
 
-  const foto__perfil = document.querySelector('.container__caixa');
-  foto__perfil.style.marginTop = '5em';
+  const container_foto__perfil = document.querySelector('.container__caixa');
+    container_foto__perfil.style.marginTop = '5em';
+
+  const foto__perfil = document.querySelector('.foto__perfil')
+    foto__perfil.style
 
   
 }

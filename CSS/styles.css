@@ -729,12 +729,6 @@ textarea:hover {
         width: 56em;
     }
 
-    .container__caixa {
-        display: flex;
-        align-items: center;
-        margin-left: 6em;
-    }
-
     .header__menu {
         display: none;
     }
@@ -744,6 +738,21 @@ textarea:hover {
         display: flex;
         color: white;
         cursor: pointer;
+    }
+
+    .container__caixa {
+        display: flex;
+        align-items: normal;
+        margin: 10em 0 0 6em;
+        flex-direction: column;
+    }
+
+    .container__perfil {
+        margin-left: -11em;
+    }
+
+    .titulo__principal {
+        margin-top: 0; 
     }
 
     .secundario::before {
