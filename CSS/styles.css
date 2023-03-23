@@ -38,8 +38,7 @@ body {
 }
 
 nav #burguer {
-    color: white;
-    cursor: pointer;
+    display: none;
 }
 
 nav #burguer:hover {
@@ -741,7 +740,10 @@ textarea:hover {
     }
 
     nav #burguer {
-        margin-left: 100vw;
+        margin-right: 100vw;
+        display: flex;
+        color: white;
+        cursor: pointer;
     }
 
     .secundario::before {

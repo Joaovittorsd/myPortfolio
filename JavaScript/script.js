@@ -73,7 +73,11 @@ menuLinks.forEach(function(link) {
 
 function clickMenu() {
   const lista__menu = document.querySelector('.header__menu');
-  lista__menu.style.display = 'flex';
+  if (lista__menu.style.display == 'flex') {
+    lista__menu.style.display = 'none';
+  } else {
+    lista__menu.style.display = 'flex';
+  }
   lista__menu.style.flexDirection = 'column';
 
   const foto__perfil = document.querySelector('.container__caixa');
