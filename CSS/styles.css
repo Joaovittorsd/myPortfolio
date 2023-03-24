@@ -720,7 +720,7 @@ textarea:hover {
 
 /*-----------Responsividade de telas------------------*/
 
-@media (max-width: 870px) {
+@media (max-width: 768px) {
 
     html,
     body {
@@ -729,30 +729,11 @@ textarea:hover {
         width: 56em;
     }
 
-    .header__menu {
-        display: none;
-    }
-
-    nav #burguer {
-        margin-right: 100vw;
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-
     .container__caixa {
         display: flex;
-        align-items: normal;
-        margin: 10em 0 0 6em;
-        flex-direction: column;
-    }
-
-    .container__perfil {
-        margin-left: -11em;
-    }
-
-    .titulo__principal {
-        margin-top: 0; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 6em;
     }
 
     .secundario::before {
@@ -764,13 +745,19 @@ textarea:hover {
         z-index: 0;
     }
 
+   
+
+    .menu__portfolio {
+        font-size: 25px;
+    }
+
     .portfolio__projeto-img {
-        display: inline-block;
+        display: block;
         margin: 3em 0 4em;
         width: 10em;
         height: 10em;
     }
-
+ 
     .container__experiencias {
         display: inline-block;
         width: 22em;

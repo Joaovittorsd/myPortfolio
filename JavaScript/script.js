@@ -70,21 +70,3 @@ menuLinks.forEach(function(link) {
   });
 });
 
-
-function clickMenu() {
-  const lista__menu = document.querySelector('.header__menu');
-  if (lista__menu.style.display == 'flex') {
-    lista__menu.style.display = 'none';
-  } else {
-    lista__menu.style.display = 'flex';
-  }
-  lista__menu.style.flexDirection = 'column';
-
-  const container_foto__perfil = document.querySelector('.container__caixa');
-    container_foto__perfil.style.marginTop = '5em';
-
-  const foto__perfil = document.querySelector('.foto__perfil')
-    foto__perfil.style
-
-  
-}
