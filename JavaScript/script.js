@@ -44,18 +44,20 @@ window.addEventListener("keydown", (event) => {
     }
   });
   
-  // Define a função que será executada quando a página for carregada inicialmente
+// Define a função que será executada quando a página for carregada inicialmente
 window.addEventListener('load', function() {
-    const linha1 = document.querySelector('.experiencia__linha__1');
-    const alturaInicial = linha1.getBoundingClientRect().top - window.innerHeight + 400;
-  
-    function carregarLinha() {
-      if (window.scrollY >= alturaInicial) {
-        linha1.style.height = '825px';
-      }
+  const linha1 = document.querySelector('.experiencia__linha__1');
+  const alturaInicial = linha1.getBoundingClientRect().top - window.innerHeight + 400;
+
+  function carregarLinha() {
+    if (window.innerWidth < 768) {
+      linha1.style.height = '900px';
+    } else if (window.scrollY >= alturaInicial) {
+      linha1.style.height = '825px';
     }
-  
-    window.addEventListener('scroll', carregarLinha);
+  }
+
+  window.addEventListener('scroll', carregarLinha);
 });
 
 
