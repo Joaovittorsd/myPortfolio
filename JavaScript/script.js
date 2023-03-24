@@ -44,14 +44,13 @@ window.addEventListener("keydown", (event) => {
     }
   });
   
-// Define a função que será executada quando a página for carregada inicialmente
 window.addEventListener('load', function() {
   const linha1 = document.querySelector('.experiencia__linha__1');
   const alturaInicial = linha1.getBoundingClientRect().top - window.innerHeight + 400;
 
   function carregarLinha() {
-    if (window.innerWidth < 768) {
-      linha1.style.height = '900px';
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      linha1.style.height = '1000px';
     } else if (window.scrollY >= alturaInicial) {
       linha1.style.height = '825px';
     }
