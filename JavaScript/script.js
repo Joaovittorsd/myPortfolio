@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
 
   function carregarLinha() {
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      linha1.style.height = '1000px';
+      linha1.style.height = '900px';
     } else if (window.scrollY >= alturaInicial) {
       linha1.style.height = '825px';
     }

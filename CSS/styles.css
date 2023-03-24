@@ -739,13 +739,11 @@ textarea:hover {
     .secundario::before {
         content: '';
         position: absolute;
-        width: 56em;
-        height: 167em;
+        width: 100%;
+        height: 2864px;
         background-color: rgba(9, 19, 48, 0.55);
         z-index: 0;
     }
-
-   
 
     .menu__portfolio {
         font-size: 25px;
@@ -818,5 +816,4 @@ textarea:hover {
         padding: 0.7em 0 0 0.2em;
         max-height: 17em;
     }
-
 }
