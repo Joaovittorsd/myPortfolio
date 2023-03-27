@@ -37,15 +37,6 @@ body {
     top: 0;
 }
 
-nav #burguer {
-    display: none;
-}
-
-nav #burguer:hover {
-    color: var(--cor--button--enviar);
-    cursor: pointer;
-}
-
 .nav__menu,
 .nav__menu div {
     display: flex;
@@ -722,4 +713,89 @@ textarea:hover {
 
 @media (max-width: 768px) {
 
+    .nav__menu,
+    .nav__menu div {
+        display: none;
+    }
+
+    .container__portfolio {
+        font-size: 1em;
+    }
+
+    .portfolio__links {
+        line-height: 1;
+    }
+
+    .portfolio__projeto-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .portfolio__link {
+        display: block;
+        font-size: 0;
+    }
+
+    .menu__portfolio {
+        margin: 4em 0 0 0;
+    }
+
+    #experiencia .experienci__circulo__01 {
+        display: none;
+    }
+
+    .secundario__container__experiecia  {
+        margin-top: 2em;
+    }
+
+    .experienci__circulo__01 {
+        display: none;
+    }
+
+    .esperiecia__01 {
+        text-align: center;
+    }
+
+    .esperiecia__02 {
+        margin: 4em 0;
+        text-align: center;
+    }
+
+    .sobre {
+        width: 100%;
+    }
+
+    .container__logo {
+        margin: 2em 21em;
+        width: 8em;
+        display: flex;
+    }
+
+    .tecnologias {
+        grid-template-columns: 15% 50% 0%;
+    }
+
+    .contato__inputs {
+        width: 100%;
+    }
+
+    #telefone {
+        width: 204%;
+    }
+
+    .container__textare {
+        width: 95%;
+    }
+
+    #mensagem {
+        width: 100%;
+    }
+
+    .container__button {
+        width: 95%;
+    }
+
+    #BtnEnviar {
+        width: 100%;
+    }
 }
