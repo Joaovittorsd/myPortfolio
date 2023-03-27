@@ -799,3 +799,136 @@ textarea:hover {
         width: 100%;
     }
 }
+
+@media (max-width: 425px) {
+
+    .titulo__principal {
+        margin: 0;
+    }
+
+    .container__caixa {
+        flex-direction: column;
+
+    }
+
+    .container__perfil {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto__perfil {
+        margin-top: 2em;
+    }
+
+    .container__titulo,
+    .container__nome {
+        margin: 0;
+    }
+
+    .titulo_secundario {
+        margin-top: 1em;
+    }
+
+    .container__object {
+        margin: 0;
+    }
+
+    .menu__portfolio {
+        margin-top: 1em;
+        margin-left: -5em;
+        display: flex;
+        font-size: 25px;
+    }
+
+    h3.portfolio__tecnologia {
+        font-size: 15px;
+        margin-left: -9em;
+        width: 20em;
+    }
+
+
+    .container__experiencias {
+        width: 100%;
+    }
+
+    .esperiecia__01 {
+        width: 92%;
+        margin: 0;
+        padding: 1em;
+
+    }
+
+    .ordem02, .ordem03{
+        margin-left: 4em;
+    }
+
+    .esperiecia__02 {
+        width: 92%;
+        padding: 1em;
+    }
+
+    .logo__sobre {
+        font-size: 45px;
+    }
+
+    .container__logo {
+        margin: 1em 10em 0 ;
+    }
+
+    .circulo__sobre {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .sobre__descricao {
+        margin: 0;
+        padding: 2em;
+    }
+
+    .progress-container {
+        width: 0;
+        font-size: 10px;
+        margin-top: 40em;
+    }
+
+    .tecnologias {
+        margin-top: 6em;
+        grid-template-columns: 15% 15% 0%;
+    }
+
+    .contato {
+        margin-top: -10em;
+    }
+
+    .form__contato {
+        display: block;
+    }
+
+    .titulo__contato {
+        padding-top: 2em;
+    }
+    
+    .descricao__contato {
+        text-align: justify;
+        margin: 1em;
+    }
+
+    .container__contato {
+        height: 54em;
+    }
+
+    .text__left {
+        margin-top: -8em;
+        padding: 1.2em;
+    }
+    
+    .midia__social {
+        display: flex;
+        margin-left: 7em;
+    }
+
+    .container__rodape {
+        padding-top: 1em;
+    }
+}
