@@ -832,10 +832,6 @@ textarea:hover {
         flex-direction: column;
     }
 
-    .container__menu {
-        background-color: red;
-    }
-
     .container__perfil {
         text-align: center;
         display: flex;
@@ -973,11 +969,6 @@ textarea:hover {
     .foto__perfil {
         margin-top: 6em;
     }
-
-    .container__menu {
-        background-color: pink;
-    }
-
 
     .container__titulo {
         font-size: 50px;
