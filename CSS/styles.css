@@ -939,8 +939,13 @@ textarea:hover {
         margin: 1em;
     }
 
+    .container__envio__contatos {
+        display: block;
+        width: 95%;
+    }
+
     .container__contato {
-        height: 54em;
+        height: 100%;
     }
 
     .text__left {
@@ -957,17 +962,10 @@ textarea:hover {
         padding-top: 1em;
     }
 
-    .contato__inputs {
-        width: 103%;
-    }
-
     #telefone {
-        width: 207%;
+        width: 100%;
     }
 
-    #BtnEnviar {
-        width: 102%;
-    }
 }
 
 @media (max-width: 390px) {
@@ -1003,7 +1001,7 @@ textarea:hover {
     }
 
     .container__inputs {
-        width: 175%;
+        width: 100%;
     }
 
     #telefone {
@@ -1011,10 +1009,10 @@ textarea:hover {
     }
 
     #mensagem {
-        width: 105%;
+        width: 100%;
     }
 
     #BtnEnviar {
-        width: 107%;
+        width: 100%;
     }
 }
