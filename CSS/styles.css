@@ -27,6 +27,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container__menu {
@@ -35,6 +36,10 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
+}
+
+span.material-icons {
+    display: none;
 }
 
 .nav__menu,
@@ -713,9 +718,26 @@ textarea:hover {
 
 @media (max-width: 768px) {
 
-    .nav__menu,
-    .nav__menu div {
+    span.material-icons {
+        display: flex;
+        color: var(--fonte--cor--logo);
+        margin: .5em;
+    }
+
+    .container__menu {
+        display: flex;
+    }
+
+    .header__menu {
         display: none;
+    }
+
+    div.circulo {
+        display: none;
+    }
+
+    .container__caixa {
+        margin-top: 2em;
     }
 
     .container__portfolio {
@@ -808,7 +830,6 @@ textarea:hover {
 
     .container__caixa {
         flex-direction: column;
-
     }
 
     .container__perfil {
@@ -893,7 +914,7 @@ textarea:hover {
     }
 
     .tecnologias {
-        margin-top: 6em;
+        margin-top: 10em;
         grid-template-columns: 15% 15% 0%;
     }
 
@@ -920,7 +941,7 @@ textarea:hover {
 
     .text__left {
         margin-top: -8em;
-        padding: 1.2em;
+        padding: 1em;
     }
     
     .midia__social {
@@ -930,5 +951,49 @@ textarea:hover {
 
     .container__rodape {
         padding-top: 1em;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .foto__perfil {
+        margin-top: 6em;
+    }
+
+    .container__titulo {
+        font-size: 50px;
+
+    }
+
+    .ordem02, .ordem03 {
+        margin-left: 3em;
+    }
+
+    .container__logo {
+        margin: 1em 9em 0;
+    }
+
+    .sobre__descricao {
+        padding: 1em;
+    }
+
+    .container__contato {
+        height: 58em;
+    }
+
+    .container__inputs {
+        width: 175%;
+    }
+
+    #telefone {
+        width: 100%;
+    }
+
+    #mensagem {
+        width: 105%;
+    }
+
+    #BtnEnviar {
+        width: 107%;
     }
 }
