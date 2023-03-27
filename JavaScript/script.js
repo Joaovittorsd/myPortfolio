@@ -37,12 +37,10 @@ function clickMenu() {
 
   if (navMenu.style.display == 'none') {
     navMenu.style.display = 'block';
-    navMenu.style.transition = '2s'
     fotoPerfl.style.marginTop = '12em'
     fotoPerfl.style.transition = '1s'
   } else {
     navMenu.style.display = 'none';
-    navMenu.style.transition = '2s'
     fotoPerfl.style.marginTop = '2em'
     fotoPerfl.style.transition = '1s'
   }
