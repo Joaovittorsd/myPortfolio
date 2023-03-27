@@ -908,7 +908,7 @@ textarea:hover {
 
     .sobre__descricao {
         margin: 0;
-        padding: 2em;
+        padding: 1em;
     }
 
     .progress-container {
@@ -955,6 +955,18 @@ textarea:hover {
 
     .container__rodape {
         padding-top: 1em;
+    }
+
+    .contato__inputs {
+        width: 103%;
+    }
+
+    #telefone {
+        width: 207%;
+    }
+
+    #BtnEnviar {
+        width: 102%;
     }
 }
 
