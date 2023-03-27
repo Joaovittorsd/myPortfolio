@@ -958,7 +958,7 @@ textarea:hover {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
 
     .foto__perfil {
         margin-top: 6em;
