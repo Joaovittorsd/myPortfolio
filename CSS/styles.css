@@ -716,7 +716,7 @@ textarea:hover {
 
 /*-----------Responsividade de telas------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
 
     span.material-icons {
         display: flex;
@@ -801,6 +801,7 @@ textarea:hover {
 
     .sobre {
         width: 100%;
+        background-color: #008F2F;
     }
 
     .container__logo {
@@ -913,6 +914,7 @@ textarea:hover {
 
     .sobre {
         margin-top: 10em;
+        background-color: palegoldenrod;
     }
 
     .logo__sobre {
