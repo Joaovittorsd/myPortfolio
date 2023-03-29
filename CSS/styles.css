@@ -14,8 +14,8 @@
     --cor--button--enviar: #00d646;
     --cor--button--hover: #324158;
     --largura--imagem-container: 1864px;
-    --lagura--imagem--projetos: 327px;
-    --altura--imagem--projetos: 320px;
+    --lagura--imagem--projetos: 300px;
+    --altura--imagem--projetos: 300px;
     --font--object: 'Cormorant Garamond', serif;
     --font--sub: 'Tilt Warp';
     --font--ano: 'Lato', sans-serif;
@@ -745,7 +745,7 @@ textarea:hover {
     }
 
     .portfolio__link {
-        margin-left: 0;
+        margin-left: -8px;
     }
 
     .portfolio__links {
@@ -762,7 +762,6 @@ textarea:hover {
     }
 
     .portfolio__link {
-        display: block;
         font-size: 15px;
     }
 
@@ -786,8 +785,13 @@ textarea:hover {
         display: none;
     }
 
+    .container__experiencias{
+        width: none;
+    }
+
     .esperiecia__01 {
         text-align: center;
+        margin: 0;
     }
 
     .esperiecia__02 {
@@ -818,7 +822,11 @@ textarea:hover {
     }
 
     .container__textare {
-        width: 95%;
+        width: 96.5%;
+    }
+
+    .descricao__contato, .contato__email {
+        margin: 2em 1em 0 5em;
     }
 
     #mensagem {
@@ -826,7 +834,7 @@ textarea:hover {
     }
 
     .container__button {
-        width: 95%;
+        width: 98.2%;
     }
 
     #BtnEnviar {
@@ -875,6 +883,15 @@ textarea:hover {
 
     h3.portfolio__tecnologia {
         font-size: 15px;
+    }
+
+    .portfolio__link {
+        display: block;
+    }
+
+    .portfolio__projeto-img {
+        width: 300px;
+        height: 250px;
     }
 
 
@@ -953,9 +970,8 @@ textarea:hover {
         padding: 1em;
     }
     
-    .midia__social {
-        display: flex;
-        margin-left: 7em;
+    .midia__social, .container__social {
+        display: inline-block;
     }
 
     .container__rodape {
