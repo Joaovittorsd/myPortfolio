@@ -800,7 +800,6 @@ textarea:hover {
     }
 
     .sobre {
-        margin-top: 10em;
         width: 100%;
     }
 
@@ -910,6 +909,11 @@ textarea:hover {
     .esperiecia__02 {
         width: 92%;
         padding: 1em;
+    }
+
+    .sobre {
+        margin-top: 5em;
+        background-color: blue;
     }
 
     .logo__sobre {
