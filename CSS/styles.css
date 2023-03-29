@@ -801,7 +801,6 @@ textarea:hover {
 
     .sobre {
         width: 100%;
-        background-color: #008F2F;
     }
 
     .container__logo {
@@ -819,7 +818,7 @@ textarea:hover {
     }
 
     #telefone {
-        width: 204%;
+        width: 195%;
     }
 
     .container__textare {
@@ -914,7 +913,6 @@ textarea:hover {
 
     .sobre {
         margin-top: 10em;
-        background-color: palegoldenrod;
     }
 
     .logo__sobre {
