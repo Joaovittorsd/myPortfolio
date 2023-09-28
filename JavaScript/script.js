@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
     if (window.innerWidth <= 768) {
       linha1.style.height = '1000px';
     } else if (window.scrollY >= alturaInicial) {
-      linha1.style.height = '825px';
+      linha1.style.height = '900px';
     }
   }
 
